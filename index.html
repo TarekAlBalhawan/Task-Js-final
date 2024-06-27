@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+rel="stylesheet"
+/>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="ownstyle.css">
+    <title>Document</title>
+
+
+
+</head>
+<body>
+    
+
+    <!-- Start Navbar-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0  ">
+  <div class="container-fluid navbar bg-dark border-bottom border-body" data-bs-theme="dark" >
+    <li class="nav-item  ">
+      <svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="20px" viewBox="0 0 512 512" xml:space="preserve">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        
+        <g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd11b7e3"> <path style="display: inline;" d="M283.122,122.174c0,5.24,0,22.319,0,46.583h83.424l-9.045,74.367h-74.379 c0,114.688,0,268.375,0,268.375h-98.726c0,0,0-151.653,0-268.375h-51.443v-74.367h51.443c0-29.492,0-50.463,0-56.302 c0-27.82-2.096-41.02,9.725-62.578C205.948,28.32,239.308-0.174,297.007,0.512c57.713,0.711,82.04,6.263,82.04,6.263 l-12.501,79.257c0,0-36.853-9.731-54.942-6.263C293.539,83.238,283.122,94.366,283.122,122.174z"> </path> </g> </g>
+        
+        </svg>
+        
+    </li> 
+    <li class="nav-item">
+      <svg width="15px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        
+        <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"/> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ffffff"/> </g>
+        
+        </svg>
+        
+    </li> 
+   
+    <li class="nav-item dropdown">
+      <svg width="15px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        
+        <g id="SVGRepo_iconCarrier"> <title>linkedin [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z" id="linkedin-[#ffffff]"> </path> </g> </g> </g> </g>
+        
+        </svg>
+    </li>
+    <li class="nav-item dropdown">
+      <svg fill="#ffffff" width="15px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        
+        <g id="SVGRepo_iconCarrier"> <title>tiktok</title> <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"/> </g>
+        
+        </svg>
+    </li>
+    <li class="nav-item dropdown">
+      <svg width="15px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        
+        <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8486 5.65845C13.1442 5.65845 11.7626 7.0401 11.7626 8.74446C11.7626 8.95304 11.7831 9.15581 11.822 9.35119C11.8846 9.66589 11.7924 9.99153 11.5741 10.2267C11.3558 10.4619 11.0379 10.578 10.7194 10.5389C8.51116 10.268 6.50248 9.35556 4.88498 7.9954C4.91649 8.59732 5.12515 9.23671 5.57799 9.90654L6.25677 10.9106L5.14211 11.3863L4.92704 11.4781C5.0869 11.6609 5.2791 11.8487 5.49369 12.0332C5.73717 12.2425 5.97247 12.4165 6.14726 12.5381C6.23408 12.5985 6.30452 12.645 6.35171 12.6755C6.37527 12.6907 6.39294 12.7018 6.40383 12.7086L6.41495 12.7155L6.41519 12.7157L6.41551 12.7159L6.41578 12.7161L6.41619 12.7163L6.41647 12.7165L7.96448 13.655L6.34397 14.4653C6.26374 14.5054 6.18367 14.5412 6.10393 14.573C6.42924 14.8471 6.82517 15.0995 7.2464 15.2986L8.63623 15.9556L7.47226 16.9598C6.8369 17.508 6.19778 17.9166 5.36946 18.1326C6.59681 18.7875 8.00315 19.1596 9.49941 19.1596C14.3045 19.1596 18.1746 15.325 18.1746 10.6256V10.1059L18.5998 9.80721C19.2636 9.34107 19.7329 8.71068 20.0689 7.99004H18.5398H17.9084L17.637 7.41994C17.1401 6.37633 16.0772 5.65845 14.8486 5.65845ZM3.56882 12.9581C3.38031 13.174 3.29093 13.4642 3.33193 13.7553C3.44474 14.5563 3.92441 15.2462 4.45444 15.7728C4.59838 15.9158 4.75232 16.0531 4.91396 16.184C4.88926 16.1909 4.86437 16.1975 4.83925 16.2038C4.35789 16.3243 3.70926 16.3494 2.62755 16.2434C2.20934 16.2024 1.81014 16.4273 1.62841 16.8062C1.44668 17.185 1.5212 17.6371 1.81492 17.9376C3.75693 19.9245 6.48413 21.1596 9.49941 21.1596C15.212 21.1596 19.8978 16.7239 20.1628 11.126C21.4521 10.0429 22.0976 8.57673 22.4458 7.24263C22.5241 6.94292 22.459 6.62387 22.2696 6.37873C22.0803 6.13359 21.788 5.99004 21.4783 5.99004H19.1247C18.2201 4.58853 16.6437 3.65845 14.8486 3.65845C12.1796 3.65845 9.99072 5.71435 9.7793 8.32892C7.91032 7.84456 6.2705 6.78758 5.05863 5.35408C4.83759 5.09261 4.49814 4.9624 4.15894 5.00897C3.81974 5.05554 3.52794 5.27241 3.38555 5.58378C2.78087 6.90597 2.66434 8.43104 3.34116 9.98046L3.10746 10.0802C2.64466 10.2777 2.40073 10.7884 2.5379 11.2725C2.72276 11.925 3.14129 12.5011 3.56882 12.9581Z" fill="#ffffff"/> </g>
+        
+        </svg>
+    </li>
+    <li class="nav-item dropdown me-3">
+      <svg width="15px" height="20px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff">
+
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        
+        <g id="SVGRepo_iconCarrier"> <title>youtube [#168]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#168]"> </path> </g> </g> </g> </g>
+        
+        </svg>
+    </li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">COOL NEWS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">SALE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">GIFT CARDS</a>
+        </li>
+        
+       
+      </ul>
+      <ul class="nav justify-content-end">
+        
+          <li class="nav-item dropdown p-2">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              USD
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="me-3">
+              <a class="icon-link  mt-2 " href="#">
+                <svg fill="#ffffff" width="25px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                  
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                  
+                  <g id="SVGRepo_iconCarrier"> <g id="User"> <g> <path d="M17.438,21.937H6.562a2.5,2.5,0,0,1-2.5-2.5V18.61c0-3.969,3.561-7.2,7.938-7.2s7.938,3.229,7.938,7.2v.827A2.5,2.5,0,0,1,17.438,21.937ZM12,12.412c-3.826,0-6.938,2.78-6.938,6.2v.827a1.5,1.5,0,0,0,1.5,1.5H17.438a1.5,1.5,0,0,0,1.5-1.5V18.61C18.938,15.192,15.826,12.412,12,12.412Z"/> <path d="M12,9.911a3.924,3.924,0,1,1,3.923-3.924A3.927,3.927,0,0,1,12,9.911Zm0-6.847a2.924,2.924,0,1,0,2.923,2.923A2.926,2.926,0,0,0,12,3.064Z"/> </g> </g> </g>
+                
+                  </svg>LOGIN
+              </a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center bg-danger">
+          <!-- Icon -->
+          <a class="text-reset me-4" href="#">
+            <svg width="25px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+              
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+              
+              <g id="SVGRepo_iconCarrier"> <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+              
+              </svg>
+              <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-mdb-container="body"
+                  data-mdb-ripple-init
+                  data-mdb-popover-init
+                  data-mdb-placement="bottom"
+                  data-mdb-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                >
+                  Popover on bottom
+               </button>
+          </a>
+    
+          <!-- Notifications -->
+          <div class="dropdown ">
+            <a
+              data-mdb-dropdown-init
+              class="text-reset me-3  dropdown-toggle hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              aria-expanded="false">
+              <span class="badge rounded-pill badge-notification bg-danger">0</span>
+
+            </a>
+          </div>
+    </div>
+  </div>
+</nav>
+
+     
+<!-- End  Navbar -->
+
+<!--Start Header-->
+
+<header>
+
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid test">
+      <a class="navbar-brand" href="#">
+        <img src="www.bisoncoolers.com-1709980885170\bison-white-logo_410x.png" height="60" alt="MDB Logo" loading="lazy">
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="header_center collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              COOLERS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              DRINKWARE
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              GEAR
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ACCESSORIES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              DESIGNER
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CUSTOM
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+ 
+<!-- Navbar -->
+</header>
+
+<!-- Section one-->
+<section>
+
+  <!-- Background image -->
+<div class="bg-image img-fluid d-flex justify-content-center align-items-center text-center shadow-1-strong rounded   text-white"
+    style="background-image: url('www.bisoncoolers.com-1709980885170/MAIN-BANNER-softcoolers_2000x.jpg'); height: 75vh;">
+ 
+    <div>
+    <h1 >PLAYS HARDER</h1>
+    <button class="btn btn-outline-success" type="submit">Search</button>
+
+    </div>
+</div>
+<!-- Background image -->
+
+</section>
+
+<!-- End  section one-->
+
+<!--Start Section two-->
+<section>
+  <div class="container-fluid  text-center">
+    <div class="row ">
+
+      <div class="col-lg-4 col-md-6 col-sm-4 p-0 position-relative">
+        <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\BACKWOODS-TEST_800x.jpg" alt="">
+          <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <button class="btn btn-primary" type="submit">Search</button>
+
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-4 p-0 position-relative">
+        <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\bison2_1024x1024_2x_57df96e7-c324-434c-8394-580caea364dd_800x.gif" alt="">
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+          <h1 >PLAYS HARDER</h1>
+          <p>sfggdfgdf</p>
+          <button class="btn btn-primary" type="submit">Search</button>
+  
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-4 p-0 position-relative">
+        <img class="img-fluid " src="www.bisoncoolers.com-1709980885170\40oz-Patina_800x.jpg" alt="">
+      <div class="position-absolute top-50 start-50 translate-middle text-center">
+        <h1 >PLAYS HARDER</h1>
+        <p>sfggdfgdf</p>
+        <button class="btn btn-primary" type="submit">Search</button>
+
+      </div>
+      </div>
+
+      
+      
+    </div>
+  </div>
+
+ </section>
+
+
+<!--End Section Two-->
+ 
+<!--Start Section Three-->
+<section>
+  <div class="container-fluid  text-center">
+    <div class="row ">
+
+      <div class="col-lg-4 col-md-6 col-sm-4 p-0 position-relative">
+        <img class="img-fluid" src="www.bisoncoolers.com-1709980885170/BACKPACK-drybag_800x.jpg" alt="">
+          <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <button class="btn btn-primary" type="submit">Search</button>
+
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-4 p-0  m-0 position-relative ">
+        <img class="img-fluid w-100" src="www.bisoncoolers.com-1709980885170\BeviPoolside-edit-low_1600x.gif" alt="">
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+          <h1 >PLAYS HARDER</h1>
+          <p>sfggdfgdf</p>
+          <button class="btn btn-primary" type="submit">test</button>
+  
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-4 p-0 position-relative ">
+        <img class="img-fluid " src="www.bisoncoolers.com-1709980885170\camo-tumblers_1600x.jpg" alt="">
+      <div class="position-absolute top-50 start-50 translate-middle text-center">
+        <h1 >PLAYS HARDER</h1>
+        <p>sfggdfgdf</p>
+        <button class="btn btn-primary" type="submit">Search</button>
+
+      </div>
+      </div>
+
+      
+      
+    </div>
+  </div>
+
+ </section>
+
+<!--End Section three -->
+
+<!--Start  Section four-->
+
+<section>
+  <div  class="container">
+    <div class="row justify-content-center">
+    <h1 class="text-center mt-5">
+      CHOOSE YOUR BEST LIFE
+    </h1>
+    <hr class="my-4 w-100   border-top border-5 border-dark">
+  </div>
+</div>
+ 
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 my-2 text-center">
+      <a href="" class="text-decoration-none text-black">
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\NEW-25white_1600x.png" alt="" >
+      <p>25 QT COOLER</p>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 my-2 text-center"  >
+      <a href="" class="text-decoration-none text-black">
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\50qtwhite-longsideview_1600x.png" alt="">
+      <p>50 QT COOLER</p>
+    </a>
+    </div>
+    <div class="col-lg-3 col-md-6 my-2 text-center">
+      <a href="" class="text-decoration-none text-black">
+
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\75white-sidetilt_400x.png" alt="">
+      <p>75 QT COOLER</p>
+    </a>
+    </div>
+    <div class="col-lg-3 col-md-6 my-2 text-center">
+      <a href="" class="text-decoration-none text-black">
+
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\125qtwhite-sidetilt_400x.png" alt="">
+      <p>125 QT COOLER</p>
+    </a>
+    </div>
+  </div>
+</div>
+
+ 
+
+</section >
+<!--End   Section Four -->
+
+<!--Start Section Five-->
+<section class="secfive">
+  <div  class="container">
+    <div class="row justify-content-center  ">
+    <h1 class="text-center mt-5">
+      Video Reels
+    </h1>
+     
+  </div>
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <video src="www.bisoncoolers.com-1709980885170\reelUp_ggm6qa3sso61706553891426_low.mp4" class="object-fit-cover rounded img-fluid" muted autoplay></video>
+        <h3>Some text to enable scrolling..</h3>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container ">
+  <div class="row justify-content-center ">
+    <div class="col-lg-2 col-md-6 my-2 text-center">
+      <a href="" class="text-decoration-none text-black ">
+        <video src="www.bisoncoolers.com-1709980885170\reelUp_ggm6qa3sso61706553891426_low.mp4" class="object-fit-cover rounded img-fluid" muted autoplay></video>
+        <p>25 QT COOLER</p>
+      </a>
+    </div>
+
+    <div class="col-lg-2 col-md-6 my-2 text-center">
+      <a href="" class="text-decoration-none text-black">
+        <video src="www.bisoncoolers.com-1709980885170\two.mp4" class="object-fit-cover rounded img-fluid" muted autoplay></video>      
+        <p>50 QT COOLER</p>
+     </a>
+
+     
+    </div>
+    <div class="col-lg-2 col-md-6  text-center">
+      <a href="" class="text-decoration-none text-black">
+
+        <video src="www.bisoncoolers.com-1709980885170\reelUp_afsxwv8kepo1706551355632_low.mp4" class="object-fit-cover rounded img-fluid" muted autoplay></video>      
+      <p>75 QT COOLER</p>
+    </a>
+    </div>
+    <div class="col-lg-2 col-md-6  text-center ">
+      <a href="" class="text-decoration-none text-black">
+
+        <video src="www.bisoncoolers.com-1709980885170\reelUp_ded9jypotg81706505184144_low.mp4" class="object-fit-cover rounded img-fluid" muted autoplay></video>      
+      <p>125 QT COOLER</p>
+    </a>
+    </div>
+    <div class="col-lg-2 col-md-6  text-center ">
+      <a href="" class="text-decoration-none text-black">
+
+        <video src="www.bisoncoolers.com-1709980885170\Five.mp4" class="object-fit-cover rounded img-fluid  reelup_video_preloaded reelup_video_loaded"  muted autoplay></video>      
+      <p>125 QT COOLER</p>
+    </a>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<!--End  Section Five -->        
+
+
+<!--Start  Section Six -->        
+
+<section>
+
+  <!-- Background image -->
+<div class="col-lg-12 col-md-12  bg-image img-fluid d-flex justify-content-start align-items-center text-center shadow-1-strong  text-white mt-5" 
+          style="background-image: url('/www.bisoncoolers.com-1709980885170/NEW40oz_2000x.jpg'); max-width: 100%; height: 75vh; ">
+    <div class="col-lg-5 col-md-5 col-sm-12">
+      
+      <h1>NEW 40OZ</h1>
+      <p>CERAMIC LINED</p>
+      <button type="button" class="btn btn-outline-light" data-mdb-ripple-init data-mdb-ripple-color="dark">Secondary</button>
+
+    </div>
+     
+</div>
+<!-- Background image -->
+
+</section>
+
+<!--End  Section Six -->        
+
+
+
+<!--Start  Section Seven -->        
+
+<section>
+
+  <!-- Background image -->
+<div class="col-lg-12 col-md-12  bg-image img-fluid d-flex justify-content-start align-items-center text-center shadow-1-strong  text-white mt-5" 
+          style="background-image: url('/www.bisoncoolers.com-1709980885170/VERIFYPASS-BANNER_2000x.jpg'); max-width: 100%; height: 75vh; ">
+    <div class="col-lg-5 col-md-5 col-sm-12">
+      
+      <h1>NEW 40OZ</h1>
+      <p>CERAMIC LINED</p>
+      <button type="button" class="btn btn-outline-light" data-mdb-ripple-init data-mdb-ripple-color="dark">Secondary</button>
+
+    </div>
+     
+</div>
+<!-- Background image -->
+
+</section>
+ 
+
+
+<!--End  Section Seven -->        
+
+
+<!--Start  Section Eight -->        
+
+
+<section>
+  <div  class="container-fluid" id="contact">
+    <div class="row justify-content-center">
+    <h1 class="text-center mt-5">
+      WILD BISON
+    </h1>
+    <hr class="my-4 w-100   border-top border-5 border-dark">
+  </div>
+</div>
+ 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3 col-md-6    p-0">
+      <a href="" class="text-decoration-none text-black">
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\40oz-2colors_1600x.jpg" alt="" >
+       </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6    p-0"  >
+      <a href="" class="text-decoration-none text-black">
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\seafoam-ice_1600x.jpg" alt="">
+     </a>
+    </div>
+    <div class="col-lg-3 col-md-6   p-0">
+      <a href="" class="text-decoration-none text-black">
+
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\Bison-skull-shirts_1600x.jpg" alt="">
+     </a>
+    </div>
+    <div class="col-lg-3 col-md-6     p-0 ">
+      <a href="" class="text-decoration-none text-black">
+
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\bathandabeer_cee046a6-badd-4f0f-9917-c88bd5c7bf7a_600x.jpg" alt="">
+     </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6  p-0 ">
+      <a href="" class="text-decoration-none text-black">
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\softpak-black_f201eb2b-6f7e-46f0-82af-ff88ccbcfb9d_1600x.jpg" alt="" >
+       </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6  p-0 "  >
+      <a href="" class="text-decoration-none text-black">
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\green75_6882578d-386d-44bf-a66b-4e0ef858e7e5_600x.jpg" alt="">
+     </a>
+    </div>
+    <div class="col-lg-3 col-md-6  p-0 ">
+      <a href="" class="text-decoration-none text-black">
+
+      <img class="img-fluid" src="www.bisoncoolers.com-1709980885170\BLANKET-Mountians_6daf9e4d-12d7-483f-bab4-644ef6e83034_1600x.jpg" alt="">
+     </a>
+    </div>
+    <div class="col-lg-3 col-md-6  p-0">
+      <a href="" class="text-decoration-none text-black">
+
+      <img class="img-fluid " src="www.bisoncoolers.com-1709980885170\bevi-opener_bbf390b5-de5a-4d99-8e2a-766a45c50342_1600x.jpg" alt="">
+     </a>
+    </div>
+  </div>
+</div>
+
+ 
+
+</section >
+
+<!--END  Section Eight --> 
+
+
+
+<!--Start Footer--> 
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid  p-0">
+
+  <footer class="bg-dark text-center text-lg-start text-white ">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="  d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="www.bisoncoolers.com-1709980885170\BISON-LOGO-2_500x.png" height="100" alt=""
+                 loading="lazy" />
+          </div>
+
+          <p class="text-center">Homless animal shelter The budgetary unit of the Capital City of Warsaw</p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4  text-white-50">INFO & POLICY</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <p>FIND A DEALER</p>
+            </li>
+            <li class="mb-2">
+              <p>SUPPORT</p>
+            </li>
+            <li class="mb-2">
+              <p>RESPONDER DISCOUNTS</p>
+            </li>
+            <li class="mb-2">
+              <p>TERMS AND SERVICE</p>
+            </li>
+            <li class="mb-2">
+              <p> PRIVACY POLICY</a>
+            </li>
+            <li class="mb-2">
+              <p</i>RETURN & REFUNDS</a>
+            </li>
+            <li class="mb-2">
+              <p > SITE MAP</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 text-white-50">Form</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <p href="#!" class="text-white"> AFFILIATE PROGRAM</p>
+            </li>
+            <li class="mb-2">
+              <p   class="text-white"> BECOME A DEALER</p>
+            </li>
+            <li class="mb-2">
+              <p  class="text-white"> CONTEST FORM</p>
+            </li>
+            <li class="mb-2">
+              <p  class="text-white"> DONATIONS & SPONSORSHIPS</p>
+            </li>
+            <li class="mb-2">
+              <p> REGISTER</p>
+            </li>
+            <li class="mb-2">
+              <p> WARRANTY CLAIM FORM</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 text-white-50">BISON HARD SIDE AND SOFTPAK COOLERS 100% USA MADE!</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Tarek</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</div>
+<!-- End of .container -->
+
+
+<!--End Footer -->      
+
+
+
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+></script>
+
+<!--Swiper-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+ <script src="bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\js\bootstrap.min.js"></script>
+<script src="ownjs.js"></script>
+ </body>
+</html>

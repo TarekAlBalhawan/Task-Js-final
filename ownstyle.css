@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+/*Navbar */
+
+ .container-fluid .test {
+    height:5vb;
+ }
+ .text-reset {
+    height:5vb;
+
+ }
+
+ .me-3 a{
+    text-decoration: none;
+    color:#fff;
+ }
+
+ /* nd Navbar */
+
+
+ /* Start Header*/
+
+ header {
+    background-color: #2D6C8A;
+ }
+
+ .header_center .nav-link{
+    color:#fff;
+ }
+  /* End Header*/
+
+
+  /* Start Section Five */
+
+ 
+
+  /* Swiper */
+
